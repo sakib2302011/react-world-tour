@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import './Country.css'
-const Country = ({country}) => {
+const Country = ({country, handleVisited}) => {
   const  {name, flags, population, area, cca3} = country;
 
   const [added, setAdded] = useState(false);
   const isAdded = () => {
     setAdded(!added);
   }
+  console.log(handleVisited);
 
   return (
     <div className={`box ${added && 'added'}`}>
