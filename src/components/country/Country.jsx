@@ -21,7 +21,7 @@ const Country = ({country, handleVisited, showFlags}) => {
       <h2>Population: {population}</h2>
       <h2>Area: {area} square km </h2>
       <h2>Country Code: {cca3} </h2>
-      <button onClick={markVisited}>Mark visited</button>
+      <button onClick={markVisited}>{isVisited? "Visited" : "Mark as visited" }</button>
       <button onClick={isAdded} > {added ? "Added" : "Add to visit list"} </button>
       <br />
       <button onClick={showFlags} >Show Flag</button>
